@@ -33,7 +33,7 @@ function App() {
 
   const getTransactions = async() => {
     // this url is to get and display transaction to frontend from posted data in backend and db
-    const URL = `${process.env.REACT_APP_API_URL}/transactions`;
+    const URL = `${process.env.REACT_APP_API_URL}/api/transactions`;
     const response = await fetch(URL);
     return await response.json();
   }
@@ -41,7 +41,7 @@ function App() {
   const addNewTransaction = (e) => {
     e.preventDefault();
     // this url is to  post data through from frontend to the backend and db 
-    const URL = `${process.env.REACT_APP_API_URL}/transaction`;
+    const URL = `${process.env.REACT_APP_API_URL}/api/transaction`;
                         //separator is space 
     const price = name.split(" ")[0];
     fetch( URL, {
@@ -85,7 +85,7 @@ function App() {
   const deleteTransaction = (id) => {
     console.log("id", id);
 
-  fetch(`${process.env.REACT_APP_API_URL}/transaction/${id}`, {
+  fetch(`${process.env.REACT_APP_API_URL}/api/transaction/${id}`, {
     method: "DELETE",
   })
     .then((response) => {
