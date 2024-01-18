@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main {
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* h1 span {
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+} */
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input[type="datetime-local"] {
+  color: #777;
+}
+
+form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  color: white;
+}
+
+form .basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+form button:hover {
+  background-color: white;
+}
+
+.unit {
+  padding-bottom: 7px;
+}
+
+.transactions {
+  margin-top: 10px;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+.transactionf {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+.edit-transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+.edit-transaction input {
+  background-color: transparent;
+  border: 2px solid grey;
+  color: white;
+  padding: 5px 15px;
+  width: 95%;
+  border-radius: 8px;
+}
+
+.edit-transaction input[type="date"]::-webkit-calendar-picker-indicator {
+  /* filter: invert(100%); */
+  color: white;
+}
+
+.save .btn {
+  background-color: green;
+  color: white;
+}
+
+.save .btn:hover {
+  border: 1px solid green;
+  background-color: transparent;
+  color: white;
+}
+
+.cancel .btn {
+  background-color: red;
+}
+
+.cancel .btn:hover {
+  border: 1px solid red;
+  background-color: transparent;
+  color: white
+}
+
+.transaction:first-child {
+  border-top: 0;
+}
+
+.transactionf:first-child {
+  border-top: 0;
+}
+
+.edit-transaction:first-child {
+  border-top: 0;
+}
+
+.transaction .name {
+  font-size: 1rem;
+}
+
+.transaction .description {
+  font-size: .7rem;
+  color: #888;
+}
+
+.right {
+  text-align: right;
+}
+
+.price.green {
+  color: #1c1;
+}
+
+.price.red {
+  color: #c11;
+}
+
+.transaction .datetime {
+  font-size: .7rem;
+  color: #888;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  width: 100%;
+  /* margin-top: 5px; */
+  border: 0;
+  border-radius: 5px;
+  padding: 3px 8px;
+  background-color: #ddd;
+}
+
+.update .btn {
+  background-color: #2e5fe6;
+  color: white;
+}
+
+.update .btn:hover {
+  border: 1px solid #6a6ed0;
+  background-color: transparent;
+  color: white;
+  transition: ease-in 50ms;
+}
+
+.delete .btn {
+  background-color: red;
+  color: black;
+}
+
+.delete .btn:hover {
+  border: 1px solid #f06b6b;
+  background-color: transparent;
+  color: white;
+  transition: ease-in 50ms;
+}
